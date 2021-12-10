@@ -1,18 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pengenalan Botstrap</title>
-	<!-- Menyisipkan Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!--Menyisipkan Javascript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"></script>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tugas Botstrap</title>
+  <!-- Menyisipkan Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--Menyisipkan Javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
 </head>
 <body>
-	<h1>Selamat Datang di Website "Muchamad Rizal Gusnanda Atmaja"</h1>
-	<p>Saya sedang belajar Botstrap</p>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">atmaja_GO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </nav>
+    </ul>
+  </div>  
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">    
+    <div class="container">
+    <h4>Website ini digunakan untuk belajar bootstrap.</h4>
+    <h4><b>Galeri Gambar:</b></h4>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="img-thumbnail">
+            <a href="img/a.jpg" target="_blank">
+              <img src="img/a.jpg" alt="gambar thumbnail" style="width:100%">
+              <div class="caption">
+                <p>Lionel Messi.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    <div class="col-md-4">
+    <div class="img-thumbnail">
+        <a href="img/b.jpg" target="_blank">
+          <img src="img/b.jpg" alt="gambar thumbnail" style="width:100%">
+          <div class="caption">
+            <p>Cheetah.</p>
+          </div>
+        </a>
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="img-thumbnail">
+        <a href="img/d.jpg" target="_blank">
+          <img src="img/d.jpg" alt="gambar thumbnail" style="width:100%">
+          <div class="caption">
+            <p>Adidas.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+<!--------------->
+  
+<!--Selection About-->
+<section id="about" class="about">
+  <div class="bg-dark text-white">
+    <div class="col-sm-12 col-8" >
+    <h1><b><center>ABOUT</center></b></h1>
+      <div id="section1" >   
+        <h1>Lionel Messi</h1>
+        <p><strong>Lionel Andrés Messi</strong> juga dikenal sebagai <strong>Leo Messi</strong>, (lahir 24 Juni 1987) adalah seorang pemain sepak bola profesional asal Argentina yang bermain sebagai penyerang untuk klub Ligue 1 Paris Saint-Germain dan merupakan kapten tim nasional Argentina. Sering dianggap sebagai pemain terbaik di dunia dan sering dianggap sebagai pemain terhebat sepanjang masa, Messi telah memenangkan enam penghargaan Ballon d'Or, enam Sepatu Emas Eropa, dan pada tahun 2020 dinobatkan sebagai Ballon d'Or Dream Team. Ia menghabiskan seluruh karier profesionalnya bersama Barcelona, di mana ia memenangkan 34 piala, termasuk sepuluh gelar La Liga, tujuh gelar Copa del Rey dan empat Liga Champions UEFA. Seorang pencetak gol yang produktif dan playmaker kreatif, Messi memegang rekor sebagai pencetak gol terbanyak sepanjang masa di La Liga (474 gol), gol terbanyak di La Liga dan Eropa dalam satu musim (50 gol), trigol terbanyak di La Liga (36) dan Liga Champions UEFA (8), serta umpan gol terbanyak di La Liga (192), umpan gol terbanyak La Liga dan Eropa selama satu musim (21)dan umpan gol terbanyak di Copa América (17). Ia telah mencetak lebih dari 750 gol selama karier seniornya untuk klub dan negara, dan gol terbanyak yang pernah dibuat oleh seorang pemain yang bermain hanya untuk satu klub.</p>
+      </div>
+      <div id="section2"> 
+        <h1>Cheetah</h1>
+        <p><b>Cheetah atau citah</b> (dari Sanskerta: Chitraka berfaedah "berbintik") (Acinonyx jubatus) yaitu bagian keluarga kucing (Felidae) yang berburu mangsa dengan menggunakan kecepatan dan bukan taktik mengendap-endap atau bergerombol. Binatang ini yaitu binatang yang tercepat di selang binatang darat dan dapat sampai kecepatan 110 km/jam dalam waktu singkat sampai 460 m, dengan akselerasi 0 - 100 km/jam dalam waktu 3,5 detik, lebih cepat dari beberapa supercar. Konon, selama bertahun-tahun Cheetah hanya dikenal sebagai kisah hantu. Menurut kisah, binatang pemangsa besar dengan garis-garis mirip macan ditubuhnya ini sering membawa kabur orang-orang yang mempunyai di perbatasan Mozambique. Masyarakat sering memberi julukan "magwa". Kisah atau isu mempunyainya Cheetah terbukti kebenarannya ketika Paul dan Lena Bottriel sukses memotretnya pada tahun 1975.</p>
+      </div>        
+      <div id="section3">         
+        <h1>Adidas</h1>
+        <p><b>Adidas-Salomon AG.</b> atau yang lebih dikenal dengan <b>Adidas</b> merupakan merupakan perusahaan yang memproduksi sepatu dan beberapa perlengkapan olahraga lain yang berpusat di Herzogenaurach, Jerman. Perusahaan ini pertama kali didirikan oleh Adolf (Adi) Dassler pada tanggal 18 Agustus 1949. Nama Adidas sendiri datang dari nama pendirinya. Produk Adidas pertama kali diluncurkan pada tahun 1950. Adidas mempunyai komitmen untuk memproduksi peralatan olahraga untuk beberapa atlet dalam olahraga "pinggiran", seperti lompat jauh yang atletnya bernama Dick Fosbury melompat dengan memakai sepatu buatan Adidas. Dalam Final Piala Dunia tahun 1970-an, pada saat Jerman mengalahkan Belanda pada partai akhir dengan kedudukan 2-1, pemain Jerman Franz Beckenbauer memakai Adidas pada saat acara penobatan.
+
+        Sepeninggal Adi Dassler pada tahun 1980-an, istrinya Kathe dan anaknya kemudian mengambil alih perusahaan. Pada tahun 1990-an, di bawah kepemimpinan CEO Robert Louis-Dreyfus, Adidas semakin berkembang menjadi sebuah perusahaan manufaktur yang berbasis penjualan perusahaan. Seiring dengan hal tersebut, pada tahun 1995 Adidas mulai "go public" dengan mencatatkan sahamnya untuk pertama kali di Bursa Efek Frankfurt dan Paris.Pada tahun 1996, Adidas menjadi produsen bagi 6.000 atlet di 33 negara dalam Olimpiade. Atlet-atlet tersebut kemudian berhasil meraih 220 medali, termasuk 70 medali emas. Dengan hal tersebut membuat penjualan produk Adidas semakin bertambah sebesar 50%.</p>
+      </div>
+    </div>
+  </div> 
+</section>
+<!----- Selection Contact ---->
+<section id="contact" class="contact">
+<div class="bg-dark">
+<div class="jumbotron">
+      <div class="container">
+      <h1 class="page-section-heading text-center text-uppercase text-secondary mb-0"><b>CONTACT ME</b></h1>
+      <p></p>
+        <!-- Contact Section Form-->
+          <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <!-- Name input-->
+              <div class="form-floating mb-3">
+              <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+              </div>
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+              <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+              </div>
+              <!-- Phone number input-->
+              <div class="form-floating mb-3">
+              <input class="form-control" id="phone" type="tel" placeholder="(+62)1234-5678" data-sb-validations="required" />
+              </div>
+              <!-- Message input-->
+              <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+              </div>
+              <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+              <p></p>
+              </form>
+           </div>
+          </div>
+      </div>
+</div>
+</div>
+</section>
+
+<!---------footer--------->
+<div class="bg-dark text-white">
+<div class="footer">
+  <p><b><center>&copy;Copyright Muchamad Rizal Gusnanda Atmaja</center></b></p>
+</div>
+</div>
 </body>
 </html>
