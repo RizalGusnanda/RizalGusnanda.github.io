@@ -31,6 +31,77 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    .containera {
+        background-color: #007bff;
+        /* primary color */
+        width: 100%;
+        height: 100%;
+        margin-top: -5%;
+        margin-left: -5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text {
+        margin: 0;
+        color: white;
+        font-size: 1.2em;
+        /* 18px */
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .responsive-image {
+        height: auto;
+        max-width: 80%;
+    }
+
+    .caption {
+        margin: 0;
+        font-size: 0.75em;
+        /* 12px */
+        color: white;
+    }
+
+    .responsivea-img {
+        max-width: 400px;
+        margin-left: 80px;
+    }
+
+    .copyright-text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .text {
+            font-size: 1em;
+        }
+
+        .caption {
+            font-size: 0.6em;
+        }
+
+        .responsive-image {
+            max-width: 100%;
+        }
+
+        .responsivea-img {
+            max-width: 100%;
+            margin-left: 0;
+        }
+
+        .copyright-text {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+</style>
 
 <body>
     <!-- Spinner Start -->
@@ -166,12 +237,10 @@
                             <img class="img-fluid" src="img/about-3.jpg">
                         </div>
                         <div class="col-6">
-                            <div
-                                class="bg-primary w-100 h-100 mt-n5 ms-n5 d-flex flex-column align-items-center justify-content-center">
-                                <p style="margin: 0; color: white; font-size: 18px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
-                                    AR (Augmented Reality)</p>
-                                <img style="height: auto; max-width: 80%;" src="img/ar_pertama.jpeg">
-                                <p style="margin: 0; font-size: 12px; color: white;">Gambar Marker 1</p>
+                            <div class="containera">
+                                <p class="text">AR (Augmented Reality)</p>
+                                <img class="responsive-image" src="img/ar_pertama.jpeg" alt="AR Image">
+                                <p class="caption">Gambar Marker 1</p>
                             </div>
                         </div>
                     </div>
@@ -186,7 +255,7 @@
                         pertumbuhan anak yang telah ditetapkan oleh WHO, maka ia dikatakan mengalami stunting.
                     </p>
                     <div class="row g-4 g-sm-5 justify-content-center">
-                                <img style="height: 350px; width: 700px;" src="img/test2.jpeg">
+                        <img style="max-width: 100%; height: auto; width: auto\9;" src="img/test2.jpeg">
                         <!-- <div class="col-sm-6">
                             <div class="about-fact btn-square flex-column rounded-circle bg-primary ms-sm-auto">
                                 <p class="text-white mb-0">Awards Winning</p>
@@ -310,8 +379,7 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="row g-0">
                         <div class="col-lg-12">
-                            <img class="img-fluid" src="img/about-1.jpg" width="400px" height="200px"
-                                style="margin-left: 80px;">
+                            <img class="responsivea-img" src="img/about-1.jpg" alt="About Image">
                         </div>
                     </div>
                 </div>
@@ -472,7 +540,9 @@
                                 </div>
                                 <h1 class="display-6  mb-4">"Apa yang bisa dilakukan untuk memperbaiki kondisi
                                     stunting?”</h1>
-                                <p class="fs-5 mb-4" style="text-align: justify; color: #3368c6;">Cara yang bisa
+                                <p class="fs-5 mb-4"
+                                    style="text-align: justify; color: #3368c6; font-family: Roboto, sans-serif;">Cara
+                                    yang bisa
                                     dilakukan untuk memperbaiki kondisi stunting salah satunya adalah dengan cara
                                     <b>pengaturan pola gizi (Isi Piringku)</b>, yaitu makan bukan hanya sekadar kenyang
                                     namun harus diperhatikan nutrisinya.<br><br>
@@ -499,7 +569,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center text-md-start">
-                    <p class="mb-0" style="margin-left: 500px;">&copy; <a href="#">Stop Stunting</a>.</p>
+                    <p class="mb-0 copyright-text">&copy; <a href="#">Stop Stunting</a>.</p>
                 </div>
             </div>
         </div>
